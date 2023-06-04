@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Maish's Cottage</title>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--Animate on scroll-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Social media icons-->
+
+  <link rel="stylesheet" href="styles.css"> <!--Custom CSS-->
+
+</head>
+
+
+
+<body>
+
+<!--hOME pAGE-->
+  <div id="containerhome">
+
+    <nav  data-aos="fade-up-right" data-aos-easing="linear" data-aos-duration="1000">
+      <ul>
+        <a href="#home"><li>Home</li></a>
+        <a href="#about"><li>About</li></a>
+        <a href="#gallery"><li>Gallery</li></a>
+        <a href="#stuffs"><li>Stuffs</li></a>
+      </ul>
+    </nav>
+
+
+    <div id="home" class="full-screen">
+
+      <div class="container-h2">
+        <h2>This is <span class="name"></span></h2>
+        <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_rtxec5gx.json" mode="bounce" background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
+      </div>
+      <p data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"> <i>Anazitontas Ton Eayto Mia</i>  </p>
+
+    </div>
+  </div>
+<!--hOME pAge ENd-->
+
+
+<!--About Section-->
+  <div id="about" class="full-screen">
+
+    <div class="hero-image" data-aos="zoom-in">
+      <img src="pics/hp.jpg" alt="Hero Image"> <!--Image frame removed -->
+    </div>
+
+    <div class="hero-content" data-aos="zoom-in-left">
+
+      <h2>About Myself</h2>
+      <p> <b>I'm a paradox.</b> <br>
+      I want to be happy but I think of things that make me sad. I'm lazy yet ambitious. 
+    I don't like myself, but I also love who I am. I say I don't care and I really do not. I'm a <b><i>Conflicted Contradiction</i></b> <br>
+    If I can't figure out myself, there's no way anyone else can! </p> 
+    <p> I am -- <span id="Iam"></span> </p> 
+    <p> I like -- <span id="Ilike"></span> </p> 
+    <p> I don't fancy -- <span id="Idontlike"></span> <br> <i>The list is infinite</i> </p> 
+
+    <!-- <a href="#" class="hero-link"> Enter </a> -->
+
+    </div>
+  </div>
+<!--About Section End -->
+ 
+
+
+<!--Stuffs-->
+
+  <div id="gallery" class="full-screen">
+    <div id="particles-js"></div>
+    <div class="hero-image" data-aos="zoom-in">
+      <img src="" alt="" id="image-frame">
+    </div> 
+
+  </div>
+
+<!--Stuffs End-->
+
+
+
+<div id="stuffs" class="full-screen">
+  <div class="hero-content">
+    <h2>Miscellneous</h2>
+    <p> <a href="https://youtu.be/Dj-dF0BRLbA" class="links"> Happy Happy Happy</a> </p>
+    <p> <a href="https://youtu.be/opUIls0a-4E" class="links"> Sister Minnie's Morning Routine</a> </p>
+    <p> <a href="https://youtu.be/kZwQtK1Zg5k" class="links"> Creepy Tens</a> </p>
+    <p> <a href="https://youtu.be/fDZYQD1GDd4" class="links">Harley Davidson Breakout</a> </p>
+    <p> <a href="https://youtu.be/fx2Z5ZD_Rbo" class="links">Ten Hours Of Nothing</a> </p>
+    <p> <a href="https://pnrtscr.com/fep8be" class="links">Same as the spotify link below...</a> </p>
+    <p id="sm"><a href="https://www.facebook.com/MrBean/" class="fa fa-facebook"></a>
+      <a href="https://twitter.com/Cobratate" class="fa fa-twitter"></a>
+      <a href="https://www.instagram.com/porpentinafortescue/" class="fa fa-instagram"></a>
+      <a href="https://pnrtscr.com/fep8be" class="fa fa-spotify"></a>
+    </p>
+
+  </div>
+
+  <div class="hero-image" data-aos="zoom-in">
+    <iframe id="yt" src=""> </iframe><!--Image frame removed -->
+  </div>
+  
+  
+
+</div>
+
+
+  <script src="script.js"></script> <!--Custom Script-->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> <!--Update-->
+
+  <!--Typed.js REMOVED-->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <!--Typed.js unused-->
+   <!--Typed.js USED-->
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!--aNIMATE ON SCROLL-->
+  <script>
+      AOS.init();
+  </script>
+    <script> 
+      var typed = new Typed('#Iam', {
+        strings: ['Unapologatically Insane', 'A pessimist','Slytherin','Anti Social'],
+        typeSpeed: 60,
+        backSpeed: 40,
+        backDelay: 500,
+        loop: true,
+      });
+
+      var typed1 = new Typed('#Ilike', {
+        strings: ['Kittens', 'Music','Classical Dark Academia','Books',"Life in the 60's"],
+        startDelay: 1200,
+        typeSpeed: 60,
+        backSpeed: 40,
+        backDelay: 500,
+        loop: true,
+      });
+
+      var typed2 = new Typed('#Idontlike', {
+        strings: ['Socializing', 'Modern Art & Literature','Roblox Slanders','99+ others'],
+        startDelay: 2400,
+        typeSpeed: 60,
+        backSpeed: 40,
+        backDelay: 500,
+        loop: true,
+      });
+    </script> <!--Typed js-->
+  <script src="ext-js/particles.js" defer></script>
+  <script src="ext-js/app.js" defer></script>
+
+</body>
+
+</html>
