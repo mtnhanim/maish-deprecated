@@ -21,7 +21,10 @@ typeWriter();
 const imageUrls = [
   "pics/mtn1.png",
   "pics/mtn2.jpg",
-  
+  "pics/mtn3.jpg",
+  "pics/mtn4.jpg",
+  "pics/mtn5.jpg",
+  "pics/mtn6.jpg",
 ];
 
 const ytUrls = [
